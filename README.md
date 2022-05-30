@@ -9,8 +9,8 @@ Para implementar esta solución debe de realizar los siguentes pasos:
 
 plantilla: este es un ejemplo de las variables de entorno escritas en el archivo .env
 
-API_PORT = 3001 //puerto de la API el puerto 3000 se usa para el front        
-HOST = localhost     //host de la base de datos
-USER = root           //usuario de la base de datos
-PASSWORD = root      //contraseña del usuario de la base de datos
-DATABASE = cafe      //nombre de la base de datos
+API_PORT = 3001 //puerto de la API el puerto 3000 se usa para el front          
+HOST = localhost     //host de la base de datos  
+USER = root           //usuario de la base de datos  
+PASSWORD = root      //contraseña del usuario de la base de datos  
+DATABASE = cafe      //nombre de la base de datos  
