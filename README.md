@@ -11,8 +11,8 @@ En este proyecto debes de crear un archivo .env para las variables de entorno do
 
 plantilla: este es un ejemplo de las variables de entorno escritas en el archivo .env
 
-API_PORT = 3001 //nota: el puerto 3000 se usa para el front
-HOST = localhost
-USER = root
-PASSWORD = root
+API_PORT = 3001 //nota: el puerto 3000 se usa para el front \n
+HOST = localhost \n
+USER = root \n 
+PASSWORD = root \n
 DATABASE = cafe
