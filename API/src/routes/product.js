@@ -46,7 +46,7 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   const {
-    name, ref, price, weight, category, stock, creationDate, sale,
+    name, ref, price, weight, category, stock, creation_date: creationDate, sale,
   } = req.body;
   const date = creationDate.split('T')[0];
   connection.query(
