@@ -25,7 +25,7 @@ function Product() {
 
   return (
     <div className="container mx-auto px-4 align-middle w-full content-center ">
-      <h1 className="font-bold text-center text-xl text-amber-900">PRODUCTOS</h1>
+      <h2 className="font-bold text-center text-xl text-amber-900">PRODUCTOS</h2>
       <div className="text-center my-4">
         <button
           type="button"

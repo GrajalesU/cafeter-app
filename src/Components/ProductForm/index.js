@@ -61,35 +61,53 @@ function ProductForm({ isEditing }) {
 
   return (
     <div className="container mx-auto px-4 align-middle w-1/2 content-center ">
-      <h1 className="font-bold text-center text-4xl text-amber-900 mb-5">
+      <h2 className="font-bold text-center text-4xl text-amber-900 mb-5">
         {isEditing ? 'EDITAR' : 'AGREGAR'}
         {' '}
         PRODUCTO
-      </h1>
+      </h2>
       <form onSubmit={handleSubmit}>
         <div className="rounded border-b border-amber-700 p-3 ">
-          <h1 className="block text-lg font-bold text-amber-800"> Nombre </h1>
-          <input type="text" name="name" className=" flex-1 block w-full  border-b border-amber-700" value={product.name} onChange={handleChange} />
+          <label htmlFor="name" className="block text-lg font-bold text-amber-800">
+            Nombre
+            <input type="text" name="name" className=" flex-1 block w-full  border-b border-amber-700" value={product.name} onChange={handleChange} />
+          </label>
+
         </div>
         <div className="rounded border-b border-amber-700 p-3 ">
-          <h1 className="block text-lg font-bold text-amber-800"> Referencia </h1>
-          <input type="text" className=" flex-1 block w-full  border-b border-amber-700" name="ref" value={product.ref} onChange={handleChange} />
+          <label htmlFor="ref" className="block text-lg font-bold text-amber-800">
+            {' '}
+            Referencia
+            <input type="text" className=" flex-1 block w-full  border-b border-amber-700" name="ref" value={product.ref} onChange={handleChange} />
+          </label>
         </div>
         <div className="rounded border-b border-amber-700 p-3 ">
-          <h1 className="block text-lg font-bold text-amber-800"> Precio </h1>
-          <input type="number" className=" flex-1 block w-full  border-b border-amber-700" name="price" value={product.price} onChange={handleChange} />
+          <label htmlFor="price" className="block text-lg font-bold text-amber-800">
+            {' '}
+            Precio
+            <input type="number" className=" flex-1 block w-full  border-b border-amber-700" name="price" value={product.price} onChange={handleChange} />
+          </label>
         </div>
         <div className="rounded border-b border-amber-700 p-3 ">
-          <h1 className="block text-lg font-bold text-amber-800"> Peso </h1>
-          <input type="number" className=" flex-1 block w-full  border-b border-amber-700" name="weight" value={product.weight} onChange={handleChange} />
+          <label htmlFor="weight" className="block text-lg font-bold text-amber-800">
+            {' '}
+            Peso
+            <input type="number" className=" flex-1 block w-full  border-b border-amber-700" name="weight" value={product.weight} onChange={handleChange} />
+          </label>
         </div>
         <div className="rounded border-b border-amber-700 p-3 ">
-          <h1 className="block text-lg font-bold text-amber-800"> Categoría </h1>
-          <input type="text" className=" flex-1 block w-full  border-b border-amber-700" name="category" value={product.category} onChange={handleChange} />
+          <label htmlFor="category" className="block text-lg font-bold text-amber-800">
+            {' '}
+            Categoría
+            <input type="text" className=" flex-1 block w-full  border-b border-amber-700" name="category" value={product.category} onChange={handleChange} />
+          </label>
         </div>
         <div className="rounded border-b border-amber-700 p-3 ">
-          <h1 className="block text-lg font-bold text-amber-800"> Cantidad de unidades </h1>
-          <input type="number" className=" flex-1 block w-full  border-b border-amber-700" name="stock" value={product.stock} onChange={handleChange} />
+          <label htmlFor="stock" className="block text-lg font-bold text-amber-800">
+            {' '}
+            Cantidad de unidades
+            <input type="number" className=" flex-1 block w-full  border-b border-amber-700" name="stock" value={product.stock} onChange={handleChange} />
+          </label>
         </div>
         <button
           type="submit"
